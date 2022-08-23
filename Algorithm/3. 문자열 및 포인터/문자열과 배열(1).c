@@ -19,3 +19,29 @@ int main()
 
     return 0;
 }
+
+/* 쌤 코드
+#include <stdio.h>
+
+int main()
+{
+    char alpha[6]={'h', 'e' , 'l' , 'l' , 'o'  };
+	char c;
+	int i;
+
+    printf("찾고싶은 문자 : ");
+
+    scanf("%c",&c);
+
+    for(int i=0; alpha[i]!='\0'; i++)
+    {
+        if(alpha[i]==c)
+             printf("%d번째\n",i+1);
+
+    }
+
+
+
+    return 0;
+}
+*/

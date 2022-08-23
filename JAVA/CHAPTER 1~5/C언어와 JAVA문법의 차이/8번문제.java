@@ -14,16 +14,16 @@ public class Test {
          System.out.println(count);
  				
          count=0;
-         for(int i=0; i<5; i++) 
+         for(int i=0; i<5; i++)  //i=0,1,2,3,4
          {
-             for(int j=0; j<5; j++) 
+             for(int j=0; j<5; j++)  //j=0,1,2,3,4
              {
-                 if(j==2) 
+                 if(j==2) //j= 0,1일때만
                  {
-                     break;
+                     break; //감싸고 있는 가장 가까운 반복문을 빠져나감
                  }
                  count++;
-             }
+             } //10번 실행
          }
          System.out.println(count);
  				
@@ -37,7 +37,7 @@ public class Test {
              for(int j=0; j<5; j++) 
              {
                  count++;
-             }
+             }//10번 실행
          }
          System.out.println(count);
  		
@@ -54,6 +54,8 @@ public class Test {
  				count++;
  			}
  		}
- 	   System.out.println(count);
+ 	   System.out.println(count); //2출력
     }
 }
+
+//실행결과 : 5 10 10 2
