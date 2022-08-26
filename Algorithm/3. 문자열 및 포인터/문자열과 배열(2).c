@@ -8,8 +8,8 @@ int main()
 	  int i;
 		int len=0;
 		scanf("%s",str); //scanf에서 주소연산자 쓸 필요 없음. 배열이름이 주소이기때문.
-		getchar(); //공백 받는거
-   // printf("찾고싶은 문자 : ");
+		getchar(); //str이랑 c 사이 공백 받는거 
+         // printf("찾고싶은 문자 : ");
         scanf("%c",&c);
         len=strlen(str);
         for(int i=0; str[i]!='\0'; i++) //str[i]!='\0'을 i<len 으로 써도 됨
