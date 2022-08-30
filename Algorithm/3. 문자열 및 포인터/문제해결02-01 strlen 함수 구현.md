@@ -22,6 +22,8 @@ int main() {
 	char s[100];
 	// scanf("%s", s );
 	fgets(s, 100, stdin); // 마지막에 \n\0 같이 저장, scanf로 받을 때보다 길이가 하나 추가됨
+    //fgets는 파일 받는거임
+    // stdin은 표준 입출력 => 파일이 아닌 키보드로 입력
 	
 	printf("%d\n", myStrlen(s) ); // 문자 길이 
 	printf("%d\n", myStrlen2(s)); // 문자 중 digit의 개수
