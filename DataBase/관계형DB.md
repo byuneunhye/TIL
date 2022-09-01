@@ -4,3 +4,5 @@
 
 ![image](https://user-images.githubusercontent.com/102288426/187077342-09513fbd-d177-4c38-a3ff-54a711c89fff.png)
 
+- SELECT : 애트리뷰트 추출
+- WHERE : 조건에 맞는 투플 추출
