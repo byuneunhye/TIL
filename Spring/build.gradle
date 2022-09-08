@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' //템플릿 엔진
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' //thymeleaf 템플릿 엔진(html만들어 주는거)
 	implementation 'org.springframework.boot:spring-boot-starter-web'     //웹 프로젝트 선택했던거
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
@@ -21,3 +21,6 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+
+
