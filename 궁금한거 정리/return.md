@@ -30,7 +30,7 @@ int foo(void) {
 
 
 ***
->참고:(http://mwultong.blogspot.com/2006/12/c-return-0-return-1-return-1.html)
+>참고:(http://mwultong.blogspot.com/2006/12/c-return-0-return-1-return-1.html)    
 >참고: (http://mwultong.blogspot.com/2006/07/c-return-return-0.html)
 
 
