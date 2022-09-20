@@ -1,6 +1,6 @@
 # TCP
 
-**의미** : 전송 제어 프로토콜
+**의미** : 전송 제어 프로토콜 (Transmission Control Protocol)
 
 **TCP/IP** : 응용 -> TCP -> IP(주소) - 인터페이스   
 
@@ -26,6 +26,8 @@
 
     - 확인 작업 없이 데이터 ``보냄``
 
+    - 속도 빠름
+
 <BR>
 
 
@@ -46,21 +48,31 @@
 
 2. bind
         
-3. list
+3. listen
+    - ``클라이언트의 요구``를 듣고있음
 
 4. accept
+     - 클라이트의 요구를 ``받아들임``
+     - ``accept와 close사이``에서 코딩 작업
 
 5. close
 
-- ``accept와 close사이``에서 코딩 작업
+
 
 **<클라이언트>**
 
-1. socket
+1. socket 생성
 
-2. connect
+2. connect 
+    - 서버주소를 알면 연결 함(accept)
+    - ``데이터`` 주고받음
 
 3. close
+
+***
+
+- **Three hand shaking**
+    - 클라이언트에서 connect -> 서버가 listen -> 서버에서 accept 
 
 
 
