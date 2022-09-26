@@ -58,3 +58,52 @@ int deleteArray( int a[], int index , int size){ // 배열 a[]의 index 위치�
    }
   return size;
 }
+
+
+
+
+
+
+
+
+
+
+// 함수로 입력받아 출력하기
+
+// #include <stdio.h>
+
+// void inputArray(int a[], int size);
+// void outputArray(int a[], int size);
+
+
+// int main()
+// {
+//     int a[10],b[5];
+
+//     inputArray(a, 10);
+//     outputArray(a, 10);
+
+//     return 0;
+
+// }
+
+// void inputArray(int a[], int size)
+// {
+//     int i;
+//     for(i=0; i<size; i++)
+//     {
+//         scanf("%d",&a[i]);
+//     }
+// }
+
+// void outputArray(int a[], int size)
+// {
+//     int i;
+//     for(i=0; i<size; i++)
+//     {
+//         printf("%d",a[i]);
+//     }
+// }
+
+
+
