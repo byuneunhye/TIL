@@ -14,3 +14,5 @@ int main() {
 	printf("= %d",sum); //최종 더한 값 출력
 	return 0;
 }
+
+
