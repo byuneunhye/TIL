@@ -49,3 +49,16 @@
 
 - 순서도
 ![image](https://user-images.githubusercontent.com/102288426/209588955-20b1757e-0bdd-413f-b99b-93e616fd5b04.png)
+
+```JS
+for(let i = 0; i<10 ; i++){
+    console.log(i)
+}
+```
+```JS
+myArray = [1,2,3,4,5]
+
+myArray.forEach(element = > {
+    console.log("나무찍기 "+element);
+});
+```
