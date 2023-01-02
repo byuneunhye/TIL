@@ -16,6 +16,9 @@
 ``git commit -m "커밋메시지"``   
 => staging area에서 remote repo로 버전 업로드
 
+``git log``   
+=> 커밋 내역 보기
+
 
 ``git push origin master``   
 => 깃허브로 업로드
