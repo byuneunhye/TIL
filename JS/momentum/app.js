@@ -1,26 +1,11 @@
-function sayHello(nameOfPerson, age) {
-    console.log(nameOfPerson + age);
-}
+const me = "lala";
+const days = [1, 2, false, true, null, undefined, "text", me]
 
-sayHello("nen", 15 );
-sayHello("Dd"); //age부분은 undefinde로 들어감
-
-//이까지가 함수
-
-const player = {
-    name:"lalala",
-    sayBy: function(name){
-        console.log("byby " + name)
-    },
-};
-
-console.log(player);
-console.log(player.name);
-console.log(player.sayBy("lynn"));
-
-
-
-
+console.log(days[2]);
+days[2] = "aa";
+console.log(days)
+days.push("hahaha");
+console.log(days);
 
 
 
