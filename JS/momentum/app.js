@@ -1,5 +1,5 @@
 const calculater = {
-    add : function(a, b){
+    plus : function(a, b){
         console.log(a + b);
     },
     minus : function(a, b){
@@ -12,11 +12,11 @@ const calculater = {
         console.log(a / b);
     },
     powerof : function(a, b){
-        console.log()
+        console.log(a ** b)
     },
-}
+} 
 
-calculater.add(3, 4)
+calculater.plus(3, 4)
 calculater.minus(3, 4)
 calculater.mul(3, 4)
 calculater.div(3, 4)
