@@ -16,11 +16,27 @@ function handleMouseLeave(){
     title.innerText = "Mouse is gone";
 } 
 
-title.onclick("click",handleTitleclick); //여기서 handleTitleclick뒤에 괄호()를 안쓰는건 정말 중요함 => 괄호쓰면 바로 실행 됨, 우리는 크릭이벤트가 발생하면 자바스크립트에서 자동으로 실행하기를 기대하는것임.
-title.addEventListener("mouseenter", handleMouseEnter);
+function handleWindowResize() {
+    document.body.style.backgroundColor = "tomato";
+}
+
+function hamdleWindowCopy() {
+    alert("capier!");
+}
+
+function handleWindowOffline(){
+    alert("SOS no WIFI");
+}
+
+function handleWindowOnline(){
+    alert("ALL GOOD");
+}
+
+title.onclick = handleTitleclick; //이렇게 쓰는것도 가능하지만 addEventListener사용을 더 지향할 것
+title.addEventListener("mouseenter", handleMouseEnter);//나중에 .removeEventListener을 사용할 수 있기 때문임
 title.addEventListener("mouseleave", handleMouseLeave);
 
-
-// 1. listen 하고싶은 event를 찾는 방법 : 구글에 찾고싶은 element의 이름, WebApi 적힌거 들어가면 js정보 찾을 수 있음
-// 2. 콘솔에 dir로 찾고싶은 element를 출력하면 사용가능한 event를 찾을 수 있다.
-//    -> property이름 앞에 on이 붙어있으면 event listener 
+window.addEventListener("resize",handleWindowResize);
+window.addEventListener("copy",hamdleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
