@@ -7,6 +7,10 @@ h1{
     transition : color 0.5s ease-in-out;
 }
 
-.active {
+.clicked {
     color : tomato;
+}
+
+.cute-font {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
