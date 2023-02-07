@@ -13,4 +13,6 @@ function onLoginSubmit(event){
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
+//콘솔창에 localStorage.setItem("username", "eh") 입력
+//웹브라우저의 database 보기 : 개발자 도구 -> >> application -> Local Storage
 loginForm.addEventListener("submit", onLoginSubmit);
