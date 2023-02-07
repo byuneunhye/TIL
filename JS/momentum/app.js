@@ -9,7 +9,8 @@ function onLoginSubmit(event){
 }
 
 function handleLinkClick(){
-    alert("clicked!");
+    //event.preventDefault();
+    alert("clicked!");//alert는 좀 특이해서 html의 모든 기본동작을 막음 => 잘 사용 안 함
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
