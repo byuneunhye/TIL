@@ -2,7 +2,7 @@
 
 ## FE   
 - [🟨 JS](https://github.com/byuneunhye/TIL/tree/master/JS)
-  - [🧑🏿‍🦱 니꼴라스 선생님과 함께하는 모멘텀 만들기 수업](https://github.com/byuneunhye/TIL/commits/master/JS/momentum/app.js)
+  - [🧑🏿‍🦱 니꼴라스 선생님과 함께하는 모멘텀 만들기 수업](https://github.com/byuneunhye/TIL/commits/master/JS/momentum)
 
 
 ## BE    
