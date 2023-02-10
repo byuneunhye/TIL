@@ -6,8 +6,11 @@ function paintTodo(newTodo){
     //console.log("i will paint",newTodo);
     const li = document.createElement("li");
     const span = document.createElement("span");
-    li.appendChild(span);
     span.innerText = newTodo;
+    const button = document.createElement("button");
+    button.innerText = "❌";
+    li.appendChild(span);
+    li.appendChild(button);
     console.log(li);
     toDoList.appendChild(li); 
 }
