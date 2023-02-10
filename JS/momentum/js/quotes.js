@@ -16,7 +16,7 @@ const quotes =  [
         author: "Nelson Mandela"
     },
     {
-        quote : "YLife is either a daring adventure or nothing at all. ",
+        quote : "Life is either a daring adventure or nothing at all. ",
         author: "Helen Keller"
     },
     {
@@ -24,7 +24,7 @@ const quotes =  [
         author: "Zeno"
     },
     {
-        quote : "YThis too shall pass. ",
+        quote : "This too shall pass. ",
         author: "Et hoc transibit"
     },
     {
