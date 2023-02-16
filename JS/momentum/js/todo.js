@@ -38,14 +38,10 @@ function handleToDoSubmit(event) { //submit이벤트 받아옴
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
-function sayHello(item){
-    console.log("this is the turn of ",item);
-}
-
 const savedToDos = localStorage.getItem(TODOS_KEY);
 console.log(savedToDos);  //localStorage에 있는 todos의 값을 콘솔에 띄워보기, 아무것도 없다면 null
 if(savedToDos !== null){
     const parsedToDos = JSON.parse(savedToDos); //parse: localStorage에서 가져온 string을 살아있는 JavaScript object(array)로 바꿈
     // console.log(parsedToDos);
-    parsedToDos.forEach(sayHello);
-}
+    parsedToDos.forEach((item) => console.log("this is the turn of", item));
+} 
