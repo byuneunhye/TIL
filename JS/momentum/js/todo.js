@@ -2,9 +2,13 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input"); //html전체가 아닌 for에서 input을 찾음
 const toDoList = document.getElementById("todo-list");
 
+const toDos = []
+
+function saveToDos(){
+    localStorage.setItem("todos", JSON.stringify(toDos)); //stringify: object를 string으로 만들어줌
+}
+
 function deleteToDo(event){
-    //console.log(event); //mouseEvent가 떠야하는데 pointerEvent가 뜸... 왜지?
-    //console.dir(event.target.parentElement.innerText);
     const li = event.target.parentElement;
     li.remove();
 }
@@ -23,10 +27,11 @@ function paintTodo(newTodo){
 
 function handleToDoSubmit(event) { //submit이벤트 받아옴
     event.preventDefault();
-    //console.log(toDoInput.value);
     const newTodo = toDoInput.value; //입력값 저장
     toDoInput.value = "";
+    toDos.push(newTodo);
     paintTodo(newTodo);
+    saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
