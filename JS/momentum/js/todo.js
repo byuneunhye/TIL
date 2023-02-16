@@ -4,7 +4,7 @@ const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
 
-const toDos = [];
+let toDos = []; //이전 todo들을 복원하기 위하여 let을 써 줌 
 
 function saveToDos(){
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos)); //stringify: object를 string으로 만들어줌
@@ -41,7 +41,7 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 const savedToDos = localStorage.getItem(TODOS_KEY);
 console.log(savedToDos);  //localStorage에 있는 todos의 값을 콘솔에 띄워보기, 아무것도 없다면 null
 if(savedToDos !== null){
-    const parsedToDos = JSON.parse(savedToDos); //parse: localStorage에서 가져온 string을 살아있는 JavaScript object(array)로 바꿈
-    // console.log(parsedToDos);
-    parsedToDos.forEach((item) => console.log("this is the turn of", item));
-} 
+    const parsedToDos = JSON.parse(savedToDos); 
+    toDos = parsedToDos; //local저장소에 리스트를 추가하면 배열에 덮어쓰지 않고, 추가하게 해줌 . 즉, 기존에 저장 되어있던 배열값들이 새로고침해도, 새 리스트를 추가해도 남아 있을 수 있다는 것.
+    parsedToDos.forEach(paintTodo);
+}  
