@@ -51,3 +51,15 @@ if(savedToDos !== null){
     toDos = parsedToDos; //local저장소에 리스트를 추가하면 배열에 덮어쓰지 않고, 추가하게 해줌 . 즉, 기존에 저장 되어있던 배열값들이 새로고침해도, 새 리스트를 추가해도 남아 있을 수 있다는 것.
     parsedToDos.forEach(paintTodo);
 }  
+
+//filter : array의 모든 element를 유지하는 함수
+
+//console에 출력 해보기
+
+// const todos = [{text:"lalala"}, {text:"lololo"}]
+                     
+// function niceFilter(todo){return todo.text !== "lololo"} //인자 값(()괄호 안 값)은 아무거나 해도 됨, filter는 true일 시에만 실행
+
+// todos.filter(niceFilter)
+
+
