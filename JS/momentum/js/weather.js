@@ -8,7 +8,7 @@ function onGeoOk(position){
     //console.log(url);
      fetch(url)
         .then((response) => response.json())
-        .then((data) => {
+        .then((data) => { // =>를 써서 각 개체 안의 요소들 건들이기
             const weather = document.querySelector("#weather span:first-child");
             const city = document.querySelector("#weather span:last-child");
             city.innerText = data.name;
