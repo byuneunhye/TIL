@@ -62,3 +62,9 @@ myArray.forEach(element = > {
     console.log("나무찍기 "+element);
 });
 ```
+
+## 이벤트
+- js에서 쓰는 변수를 만들어줌
+- ``document.queryselect("#id")`` 등등으로 html문서의 변수를 js로 가지고 옴
+- ``addEventListener`` 등등으로 클릭이벤트, 마우스이벤트 등등 브라우저에서 일어나는 동작을 받아옴
+- form은 submit이벤트를 기본으로 가짐
