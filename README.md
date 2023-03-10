@@ -28,3 +28,6 @@
   
   - [💎 파이썬](https://github.com/byuneunhye/TIL/tree/master/SchoolClass/Python)
  
+  - [📊 빅데이터분석](https://github.com/byuneunhye/TIL/tree/master/SchoolClass/BigDataAnalysis)
+
+  - [🧸C++](https://github.com/byuneunhye/TIL/tree/master/SchoolClass/c%2B%2B)
